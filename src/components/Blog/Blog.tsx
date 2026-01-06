@@ -13,17 +13,17 @@ const Blog: React.FC = () => {
   const posts: BlogPost[] = [
     {
       id: 1,
-      title: "Making a design system from scratch",
-      date: "12 Feb 2026",
-      category: "Design, Pattern",
-      excerpt: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
+      title: "Porque usar TypeScript",
+      date: "06 Jan 2026",
+      category: "Desenvolvimento",
+      excerpt: "TypeScript aumenta a segurança do código ao adicionar tipagem estática ao JavaScript, reduz erros em tempo de desenvolvimento e facilita a manutenção de aplicações de grande porte."
     },
     {
       id: 2,
-      title: "Creating pixel perfect icons in Figma",
-      date: "10 Jan 2026",
-      category: "Figma, Icon Design",
-      excerpt: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
+      title: "Porque usar React JS",
+      date: "06 Jan 2026",
+      category: "Desenvolvimento",
+      excerpt: "React JS permite criar interfaces modernas e performáticas com componentes reutilizáveis, melhorando a organização do código e a experiência do usuário em aplicações web escaláveis."
     }
   ];
 

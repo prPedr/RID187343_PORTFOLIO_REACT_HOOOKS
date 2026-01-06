@@ -5,16 +5,16 @@
   justify-content: center;
   padding: 50px 0;
   background-color: #FFFFFF;
-  gap: 26px; /* Espaço entre os ícones e o texto de copyright */
+  gap: 26px;
 }
 
 .footer-socials {
   display: flex;
-  gap: 35px; /* Espaçamento entre os logos */
+  gap: 35px;
 }
 
 .footer-socials a {
-  color: #21243D; /* Mesma cor dos títulos para manter a unidade */
+  color: #21243D;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
