@@ -33,14 +33,14 @@ const Projetos: React.FC = () => {
   return (
     <section className="projetos-section" id="projects">
       <div className="projetos-content">
-        <h2 className="projetos-titulo-principal">Projetos</h2>
+        <h2 className="projetos-titulo-principal text-center">Projetos</h2>
         
-        <div className="projetos-lista">
+        <div className="projetos-lista d-flex fd-column">
           {meusProjetos.map((projeto) => (
-            <div key={projeto.id} className="projeto-item">
+            <div key={projeto.id} className="projeto-item d-flex fd-column">
               <img src={projeto.imagemUrl} alt={projeto.titulo} className="projeto-img" />
               
-              <div className="projeto-info">
+              <div className="projeto-info d-flex fd-column text-center">
                 <h3 className="projeto-titulo">{projeto.titulo}</h3>
                 <p className="projeto-descricao">{projeto.descricao}</p>
               </div>
