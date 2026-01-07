@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# 🚀 Portfólio Pessoal - Pedro Desenvolvedor Full-stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📋 Especificação do Projeto
+Este projeto foi desenvolvido com base no **Template 03** do Design Portfolio Challenge. O objetivo foi criar uma Single Page Application (SPA) moderna, responsiva e performática para um portifolio pessoal.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
 
-## React Compiler
+O projeto utiliza o que há de mais moderno no ecossistema JavaScript:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React** (Biblioteca para interface)
+* **Vite** (Build tool de alta performance)
+* **TypeScript** (Tipagem estática para maior segurança no código)
+* **CSS3** (Estilização customizada com foco em responsividade)
+* **Hooks API** (`useState` e `useEffect`)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🌟 Funcionalidades Principais
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Navegação Inteligente**: Header com efeito de scroll dinâmico que altera sua aparência ao rolar a página, utilizando `useState` e `useEffect`.
+* **Download de Resumo**: Funcionalidade integrada para converter a visualização atual em PDF via comando de impressão otimizado.
+* **Seção de Blog**: Listagem dinâmica de posts com cards estilizados e tipagem rigorosa.
+* **Projetos em Destaque**: Exibição de trabalhos realizados com layout adaptativo.
+* **Totalmente Responsivo**: Design adaptado para smartphones, tablets, notebooks e desktops de grande escala.
+* **Navegação por Âncoras**: Experiência de usuário fluida com links internos que direcionam para cada seção da página.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📱 Responsividade
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+O projeto foi construído seguindo a filosofia **Mobile-First**, garantindo que:
+1.  Em **dispositivos móveis**, o conteúdo seja centralizado e empilhado para facilitar a leitura.
+2.  Em **desktops**, o layout utilize o grid original do template, respeitando paddings de 163px e alinhamentos laterais.
